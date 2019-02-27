@@ -2,7 +2,6 @@
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
 </head>
 <body>
 	<h2>Proyecto Web de clase</h2>
