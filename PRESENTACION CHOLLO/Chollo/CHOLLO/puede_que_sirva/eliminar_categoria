@@ -1,0 +1,38 @@
+<?php
+include_once 'app/Conexion.inc.php';
+include_once 'app/Categoria.inc.php';
+include_once 'app/RepositorioCategoria.inc.php';
+include_once 'app/ValidadorCategoria.inc.php';
+
+Conexion :: abrir_conexion();
+
+$categoria = new Categoria ();
+
+$categoria_insertado = RepositorioCategoria :: obtener_todos(Conexion :: obtener_conexion());
+
+	echo "<table style='width:100%' align='left' >";
+	echo "<tr align='left'>";
+	echo "<th>Nombre</th>";
+	echo"<th> Descripcion</th>";
+	echo "</tr>";
+
+for ($i=0;$i<count($categoria_insertado);$i++)
+
+{	
+
+	$nombre=$categoria_insertado[$i]->obtener_nombre();
+	$descripcion=$categoria_insertado[$i]->obtener_descripcion();
+	echo "<tr>";
+	echo "<td>$nombre</td>";
+	echo "<td>$nombre</td>";
+	echo "<td><a href='index_usuario.php'><img src='image\borrar_basura.png' height='20' width='20'>";
+	echo "</a></td>";
+	echo "</tr>";
+ }
+
+echo "</table>";
+
+Conexion :: cerrar_conexion();
+
+
+?>

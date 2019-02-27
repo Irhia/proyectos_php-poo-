@@ -1,0 +1,38 @@
+body {
+	
+	background-image: url('../image/../image/../image/../image/../image/../image/doodles.png');
+}
+
+.jumbotron {
+	background-color:firebrick;
+	color:white;
+}
+
+.panel-heading{
+	background-color: firebrick !important;
+	color:white !important;
+}
+
+.panel-body {
+	color:#2b2b2b !important;
+}
+
+.navbar {
+	background-color:#3B3A3A!important;
+}
+
+.navbar-brand:link,.navbar-brand:visited {
+	color:firebrick !important;
+}
+
+.navbar-brand:hover, .navbar-brand:active {
+	color:white !important;
+}
+
+#navbar li a:link, #navbar li a:visited{
+	color: white !important;
+}
+
+#navbar li a:hover, #navbar li a:active {
+	color: firebrick !important;
+}
